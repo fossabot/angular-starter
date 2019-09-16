@@ -1,0 +1,12 @@
+<!-- nav -->
+<nav *ngIf="currentUser">
+  <div>
+      <a routerLink="/home">Home</a>
+      <a href (click)="logout()">Logout</a>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div>
+  <router-outlet></router-outlet>
+</div>
