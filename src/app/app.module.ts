@@ -4,9 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
-import { JwtInterceptor } from './core/helpers/jwt.interceptor';
-import { ErrorInterceptor } from './core/helpers/error.interceptor';
-import { fakeBackendProvider } from './core/helpers/fake-backend';
+import { JwtInterceptor } from './_core/helpers/jwt.interceptor';
+import { ErrorInterceptor } from './_core/helpers/error.interceptor';
+import { fakeBackendProvider } from './_core/helpers/fake-backend';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { fakeBackendProvider } from './core/helpers/fake-backend';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
