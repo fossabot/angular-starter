@@ -8,7 +8,7 @@
     <div>
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
         <div>
-          <label for="username">{{ 'USERNAME' | translate }}</label>
+          <label for="username" translate>USERNAME</label>
           <input type="text" formControlName="username" />
           <div *ngIf="submitted && f.username.errors">
             <div *ngIf="f.username.errors.required">Username is required</div>

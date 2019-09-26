@@ -21,7 +21,6 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -45,8 +44,7 @@ import { TranslateModule } from '@ngx-translate/core';
     MatRadioModule,
     MatProgressSpinnerModule,
     MatTabsModule,
-    MatListModule,
-    TranslateModule
+    MatListModule
   ],
   exports: [
     MatButtonModule,
@@ -69,8 +67,7 @@ import { TranslateModule } from '@ngx-translate/core';
     MatRadioModule,
     MatProgressSpinnerModule,
     MatTabsModule,
-    MatListModule,
-    TranslateModule
+    MatListModule
   ],
 })
-export class SharedComponentsModule { }
+export class AngularMaterialModule { }
