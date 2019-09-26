@@ -3,7 +3,7 @@
   <div>
       <h6>Users from secure api end point</h6>
       <ul *ngIf="users">
-          <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
+          <li *ngFor="let user of users">{{ 'USERNAME' | translate}} {{user.firstName}} {{user.lastName}}</li>
       </ul>
   </div>
   <button mat-button>Click me!</button>
